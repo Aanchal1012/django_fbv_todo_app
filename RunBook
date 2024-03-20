@@ -1,0 +1,8 @@
+This is a small runbook created while learning and making this project
+
+1) Install django if not already done use command : python -m pip install django
+2) Create a new django project by running the command : django-admin startproject todo
+    a) this should create a new folder with the name todo,
+    b) Within this folder we have all the files needed for a django app.
+3)
+
