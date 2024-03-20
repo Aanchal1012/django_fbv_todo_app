@@ -1,8 +1,42 @@
 This is a small runbook created while learning and making this project
 
-1) Install django if not already done use command : python -m pip install django
-2) Create a new django project by running the command : django-admin startproject todo
+1) Install django if not already done use command : "python -m pip install django"
+
+2) Create a new django project by running the command : "django-admin startproject todo"
     a) this should create a new folder with the name todo,
     b) Within this folder we have all the files needed for a django app.
-3)
+
+3) The project structure should be like this,
+├── todo
+    ├── todo
+    │   ├── asgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── manage.py
+
+    a) todo/ -is the external folder of your project. It doesn’t matter to Django, so we can actually rename
+        it to whatever we want.
+    b) todo/todo/ -is the actual Django project folder. It contains the setting files of the project.
+    c) manage.py -is a Python script with the same functionality of django_admin but our your project’s settings.
+    d) __init__.py -makes todo/todo a Python package.
+    e) settings.py -is the core file of the project. We can add, modify, or delete variables to change the behavior of
+        our project.
+    f) urls.py -is the file that defines the URLs of our project.
+    g) asgi.py and wsgi.py let you deploy our project to a server.
+
+4) To check if the app is created successfully or not, run the command : "python3 manage.py runserver" , make sure to
+   go in the todo directory since that's where the manage.py file is
+
+5) Time to create what we want in this todo app project. What do i want it to do for now?
+    a) let me add a new task
+    b) list all existing task
+    c) update an already existing task
+    d) delete a task
+6) In order to do this, we need a another app within the todo app, lets call it tasks, do this by running the command:
+   "python3 manage.py startapp tasks". This will create yet another folder inside todo app, the folder structure will
+    have different files that will be used to do the CRUD operations.
+
+
 
